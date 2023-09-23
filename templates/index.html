@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Emoji Popup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="emoji-popup" id="emojiPopup">
+        <!-- Emoji will be displayed here -->
+    </div>
+    <div class="emoji-toggle-button" id="emojiToggleButton" onclick="toggleEmojiPanel()">☺️</div>
+    <div class="emoji-panel" id="emojiPanel">
+        <button class="emoji-button" onclick="showEmoji('❤️')">❤️</button>
+        <button class="emoji-button" onclick="showEmoji('😍')">😍</button>
+        <button class="emoji-button" onclick="showEmoji('😘')">😘</button>
+        <!-- Add more emoji buttons here -->
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
